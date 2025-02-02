@@ -1,0 +1,278 @@
+*{ 
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family:"Karla";
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #e2eff8;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 175px;
+    justify-content: space-between;
+    
+}
+#nav-left{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: #333;
+    gap: 50px;
+    padding: 30px;
+    
+}
+#nav-left a{
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        color: #1f1f1f;
+        gap: 30px;
+        
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #part2 a{
+    text-decoration: none;
+    color: black;
+    font: bold
+
+}
+#nav #part2 A:nth-last-child(1){
+    color: #186ed0;
+    padding: 10px 25px;
+    border-radius: 5px;
+    position: relative;
+    border: 2px solid #186ed0;
+    overflow: hidden;
+    
+}
+#nav #part2 A:nth-last-child(1) #blue{
+    width: 100%;
+    height: 100%;
+    background-color:#0fc8cb;
+    position:absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease-in;
+    
+}
+#nav #part2 A:nth-last-child(1) h5{
+    font-weight: 1000;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 A:nth-last-child(1):hover #blue{
+    left: 0;
+}
+#main>h5{
+    font-size: 15px;
+    font-weight: 100;
+    color: #666;
+   
+}
+#headercontenttop{
+    display: block;
+    text-align: center;
+    margin: 5px;
+    color: #1f1f1f;
+}
+
+#headercontenttop>h4{
+    color: #666;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Karla';
+    margin-top: 150px;
+}
+#headercontenttop>h1{
+    margin-top: 20px;
+    font-size: 66px;
+    font-family: "karla";
+    font-weight: 900;
+}
+#headercontenttop>p{
+    font-size: 21px;
+    font-weight:normal;
+    font-weight: 400;
+    color: #666;
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 1.5;
+
+}
+#email-btn{
+    margin-top: 10px;
+
+}
+#email-btn input{
+    padding: 20px;
+    width: 250px;
+    border: 0px solid #ccc;
+    border-radius: 2px;
+    font-family: "karla";
+    color: #666;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+#submit-btn{
+    padding: 20px 70px;
+    margin-left: 5px;
+    margin-top: 0;
+    background: #fc593b;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: "karla";
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+#trust-text{
+    color: #878b90;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 20px;
+
+}
+#Features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0px 20px;
+    margin: 0 15vw;
+}
+#icon{
+    display: block;
+    align-items:center;
+    justify-content: center;
+    width: 40px;
+    height: auto;
+    scale: 175%;
+    overflow: visible;
+    position: static;
+    padding-top: 21px;
+}
+#feature{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+#content>h3{
+    color: black;
+    text-align: left;
+    font-size: 23px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+#content>p{
+    font-size: 15px;
+    color: #666;
+    text-align: left;
+}
+#empty{
+    margin: 60px;
+}
+#logo{
+    display: flex;
+}
+#logo>i{
+    scale: 155%;
+    padding: 7px;
+    margin: 2px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #nav {
+        padding: 0 5%;
+    }
+    #headercontenttop h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    #nav-left {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #nav #part2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #headercontenttop {
+        min-height: 60vh;
+    }
+    #headercontenttop h1 {
+        font-size: 6vw;
+        max-width: 90%;
+    }
+    #headercontenttop p {
+        font-size: 2.5vw;
+        max-width: 90%;
+    }
+    #email-btn {
+        flex-direction: column;
+    }
+    #submit-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav {
+        padding: 10px;
+    }
+    #nav-left a, #nav #part2 a {
+        font-size: 14px;
+    }
+    #headercontenttop {
+        min-height: 70vh;
+    }
+    #headercontenttop h1 {
+        font-size: 7vw;
+    }
+    #headercontenttop p {
+        font-size: 3vw;
+    }
+}
